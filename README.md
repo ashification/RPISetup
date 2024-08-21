@@ -16,5 +16,6 @@ You can run them where you are in the directory or navigate and open their locat
 
 
 e.g. to run this file https://github.com/ashification/RPISetup/blob/main/Installers/rpi_base_installer.sh
+    
     sh ./rpi_base_installer.sh
 	
