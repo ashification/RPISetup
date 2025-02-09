@@ -34,8 +34,8 @@ hostname -I # Display IP address
 
 # Install
 echo "Installing software and updates"
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
 sudo apt-get install  vim    # install the vim text editor
 sudo apt-get install  git    # install git repo
