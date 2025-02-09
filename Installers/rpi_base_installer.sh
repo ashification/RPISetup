@@ -1,14 +1,15 @@
- ##############################################
-## 		         Set up file		                    ##
-## ------------------------------------------  ## 
-##| Editor | Version |    Date    | Comments | ## 
-## ------------------------------------------  ##    
-##   ALee      1.0      10/05/18    Created    ##
-##   ALee      1.1      21/05/18    bluepy     ##
-##   ALee	     1.2		    01/02/21    add vim    ##
-##   TRW 	     1.3		    09/02/25    Add auto Y ##
-## 					                                       ##
- ##############################################
+ #################################################################
+## 		         Set up file		                            ##
+## ---------------------------------------------------------    ## 
+##| Editor | Version |    Date    |       Comments          |   ## 
+## ---------------------------------------------------------    ##    
+##   ALee      1.0      10/05/18    Created                     ##
+##   ALee      1.1      21/05/18    bluepy                      ##
+##   ALee	   1.2		01/02/21    add vim                     ##
+##   TRW 	   1.3		09/02/25    Add auto Y                  ##
+##   ALEE 	   1.4		09/02/25    Add Run Auxillary Scripts   ##
+## 					                                            ##
+ #################################################################
 
 
 #!/bin/bash
@@ -73,8 +74,11 @@ qmake --version;
 qtcreator &;
 
 
+# Running system Config Scripts to enable features. 
+# Comment out if you do not wish to enable any of the following
 
-#Configure SSH
-echo "activating SSH functionality"
-raspi-config nonint # Runs RPI config as non nteractive
-do_ssh 0	    # Activates SSH if not already done so
+    #Configure i2C
+    sh ./RPISetup/system_setup/i2c_enabling.sh  
+
+    #Configure SSH
+    sh ./RPISetup/system_setup/ssh_enabling.sh
