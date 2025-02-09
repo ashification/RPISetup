@@ -1,12 +1,13 @@
  ##############################################
-## 		         Set up file		                ##
-## ------------------------------------------ ## 
-##| Editor | Version |    Date    | Comments |## 
-## ------------------------------------------ ##    
-##   ALee      1.0      10/05/18    Created   ##
-##   ALee      1.1      21/05/18    bluepy    ##
-##   ALee	     1.2		  01/02/21    add vim   ##
-## 					                                  ##
+## 		         Set up file		                    ##
+## ------------------------------------------  ## 
+##| Editor | Version |    Date    | Comments | ## 
+## ------------------------------------------  ##    
+##   ALee      1.0      10/05/18    Created    ##
+##   ALee      1.1      21/05/18    bluepy     ##
+##   ALee	     1.2		    01/02/21    add vim    ##
+##   TRW 	     1.3		    09/02/25    Add auto Y ##
+## 					                                       ##
  ##############################################
 
 
@@ -36,12 +37,12 @@ hostname -I # Display IP address
 echo "Installing software and updates"
 sudo apt-get -y update
 sudo apt-get -y upgrade
-
-sudo apt-get install  vim    # install the vim text editor
-sudo apt-get install  git    # install git repo
-sudo apt-get install  gcc    # install c/c++ compiler
-sudo apt-get install  i2c-tools # install i2c tools
-sudo apt-get install wiringpi # Allows for GPIO control
+ 
+sudo apt-get install  vim                    # install the vim text editor
+sudo apt-get install  git                    # install git repo
+sudo apt-get install  gcc                    # install c/c++ compiler
+sudo apt-get install  wiringpi               # Allows for GPIO control
+sudo apt-get install  i2c-tools              # install i2c tools
 
 sudo apt-get install  nmap  # SSH
 sudo apt-get install  xrdp  # Remote PC
@@ -50,16 +51,16 @@ sudo apt-get install  nmcli # Command-line tool for controlling NetworkManager
 sudo apt-get install  python
 sudo apt-get install  mysql-server
 sudo apt-get install  npm i bluetoothctl
-sudo apt-get install  bluez  #Bluetooth libraries
-sudo apt-get install  bluez-utils #Bluetooth controls
+sudo apt-get install  bluez                 #Bluetooth libraries
+sudo apt-get install  bluez-utils           #Bluetooth controls
 sudo apt-get install python-pip
 sudo apt-get install libglib2.0-dev
 sudo pip install bluepy
 
-sudo pip     install  pygatt
-sudo pip     install  "pygatt[GATTTOOL]"		 	 #Library relative to script being ran
-sudo pip     install  git+https://github.com/peplin/pygatt  	 #Library relative to script being ran
-sudo -E pip  install  pexpect					 #Library relative to script being ran
+sudo pip     install  pygatt                                     #Bluetooth GATT protocol python Library
+sudo pip     install  "pygatt[GATTTOOL]"		 	                     #Library relative to script being ran
+sudo pip     install  git+https://github.com/peplin/pygatt  	    #Library relative to script being ran
+sudo -E pip  install  pexpect					                               #Library relative to script being ran
 
 #sudo apt install qtcreator libssl-dev git;
 sudo apt install qt5-default;
