@@ -73,7 +73,10 @@ sudo make install;
 qmake --version;
 qtcreator &;
 
+## Source for repo https://nodered.org/docs/getting-started/raspberrypi
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) # Install NodeRed for RPI
+##node-red-start # Starts node red
+sudo systemctl enable nodered.service # Ensures Nodewred runs on startup
 
 # Running system Config Scripts to enable features. 
 # Comment out if you do not wish to enable any of the following
