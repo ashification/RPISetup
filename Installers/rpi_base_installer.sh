@@ -73,6 +73,7 @@ sudo make install;
 qmake --version;
 qtcreator &;
 
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) # Install NodeRed for RPI
 
 # Running system Config Scripts to enable features. 
 # Comment out if you do not wish to enable any of the following
