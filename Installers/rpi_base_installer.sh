@@ -63,16 +63,26 @@ sudo pip     install  "pygatt[GATTTOOL]"		 	                     #Library relati
 sudo pip     install  git+https://github.com/peplin/pygatt  	    #Library relative to script being ran
 sudo -E pip  install  pexpect					                               #Library relative to script being ran
 
+
+#Reference material https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
+sudo apt-get install mosquitto
+sudo apt-get install mosquitto-clients
+sudo systemctl enable mosquitto.service
+sudo systemctl status mosquitto.service
+mosquitto -v
+
+# netstat -a
+
 # Libraries needed for EE513 Module Assignment 2
 # sudo apt install qtcreator libssl-dev git;
-sudo apt install qt5-default;
-git clone https://github.com/derekmolloy/ee513Assignment2;
-git clone http://github.com/eclipse/paho.mqtt.c;
-cd paho.mqtt.c/;
-make;
-sudo make install;
-qmake --version;
-qtcreator &;
+# sudo apt install qt5-default;
+# git clone https://github.com/derekmolloy/ee513Assignment2;
+# git clone http://github.com/eclipse/paho.mqtt.c;
+# cd paho.mqtt.c/;
+# make;
+# sudo make install;
+# qmake --version;
+# qtcreator &;
 
 ## Installing nodeRed
 ## Source for repo https://nodered.org/docs/getting-started/raspberrypi
