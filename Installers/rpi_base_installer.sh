@@ -44,6 +44,7 @@ sudo apt-get install  git                    # install git repo
 sudo apt-get install  gcc                    # install c/c++ compiler
 sudo apt-get install  wiringpi               # Allows for GPIO control
 sudo apt-get install  i2c-tools              # install i2c tools
+sudo apt-get install openssl                 # Install OpenSSL for iuse with security cert and keys
 
 sudo apt-get install  nmap  # SSH
 sudo apt-get install  xrdp  # Remote PC
@@ -70,8 +71,9 @@ sudo apt-get install mosquitto-clients
 sudo systemctl enable mosquitto.service
 sudo systemctl status mosquitto.service
 mosquitto -v
-
 # netstat -a
+
+
 
 # Libraries needed for EE513 Module Assignment 2
 # sudo apt install qtcreator libssl-dev git;
