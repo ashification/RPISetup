@@ -65,40 +65,31 @@ sudo pip     install  git+https://github.com/peplin/pygatt  	    #Library relati
 sudo -E pip  install  pexpect					                               #Library relative to script being ran
 
 
-#Reference material https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
-sudo apt-get install mosquitto
-sudo apt-get install mosquitto-clients
-sudo systemctl enable mosquitto.service
-sudo systemctl status mosquitto.service
-mosquitto -v
-# netstat -a
+#Install Mosquitto MQTT Broker
+ #Reference material https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
+ sudo apt-get install mosquitto
+ sudo apt-get install mosquitto-clients
+ sudo systemctl enable mosquitto.service
+ sudo systemctl status mosquitto.service
+ mosquitto -v
+ # netstat -a
 
-
-
-# Libraries needed for EE513 Module Assignment 2
-# sudo apt install qtcreator libssl-dev git;
-# sudo apt install qt5-default;
-# git clone https://github.com/derekmolloy/ee513Assignment2;
-# git clone http://github.com/eclipse/paho.mqtt.c;
-# cd paho.mqtt.c/;
-# make;
-# sudo make install;
-# qmake --version;
-# qtcreator &;
 
 ## Installing nodeRed
-## Source for repo https://nodered.org/docs/getting-started/raspberrypi
+  ## Source for repo https://nodered.org/docs/getting-started/raspberrypi
 
-bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) # Install NodeRed for RPI
-sudo systemctl enable nodered.service                                                                             # Ensures Nodered runs on startup
-npm install node-red-dashboard                                                                                    # Install the dashboard package for nodeRed
-node-red-start # to manuallystarts node red
+  bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) # Install NodeRed for RPI
+  sudo systemctl enable nodered.service                                                                             # Ensures Nodered runs on startup
+  npm install node-red-dashboard                                                                                    # Install the dashboard package for nodeRed
+  node-red-start # to manuallystarts node red
 
-## If the install goes wrong below are the commands to uninstall nodeRed
-## ref https://community.openhab.org/t/how-to-uninstall-node-red/104013
-## sudo npm remove -g node-red node-red-admin
-## rm -R ~/.node-red
+  ## If the install goes wrong below are the commands to uninstall nodeRed
+  ## ref https://community.openhab.org/t/how-to-uninstall-node-red/104013
+  ## sudo npm remove -g node-red node-red-admin
+  ## rm -R ~/.node-red
 
+## Installing Wireguard
+ sudo apt-get install wireguard wireguard-tools
 
 # Running system Config Scripts to enable features. 
 # Comment out if you do not wish to enable any of the following
