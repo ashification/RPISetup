@@ -45,6 +45,7 @@ sudo apt-get install  gcc                    # install c/c++ compiler
 sudo apt-get install  wiringpi               # Allows for GPIO control
 sudo apt-get install  i2c-tools              # install i2c tools
 sudo apt-get install openssl                 # Install OpenSSL for iuse with security cert and keys
+sudo apt install qrencode                    # QR code generator
 
 sudo apt-get install  nmap  # SSH
 sudo apt-get install  xrdp  # Remote PC
