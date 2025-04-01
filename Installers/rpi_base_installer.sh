@@ -90,6 +90,7 @@ sudo -E pip  install  pexpect					                               #Library relati
 
 ## Installing Wireguard
  sudo apt-get install wireguard wireguard-tools
+ # Follow steps here to configure youre server https://docs.pi-hole.net/guides/vpn/wireguard/server/
 
 # Running system Config Scripts to enable features. 
 # Comment out if you do not wish to enable any of the following
