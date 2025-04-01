@@ -1,3 +1,4 @@
+# Libraries needed for EE513 Module Assignment 2
 #sudo apt install qtcreator libssl-dev git;
 sudo apt install qt5-default;
 git clone https://github.com/derekmolloy/ee513Assignment2;
