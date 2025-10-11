@@ -7,6 +7,8 @@
 # On windows PC enable SMB1 
 # https://learn.microsoft.com/en-us/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3?tabs=server
 # Control Panel > Programs > Turn Windows features on or off. Locate and check the box for SMB 1.0/CIFS File Sharing Support, click OK, and then restart your computer to apply the changes
+# Follow ts steps from 
+# https://kb.synology.com/en-global/DSM/tutorial/What_can_I_do_if_my_Synology_NAS_does_not_show_up_in_Network_in_Windows_File_Explorer#x_anchor_id9
 
 sudo apt install nfs-common
 cd ~ #Open your users home directory
