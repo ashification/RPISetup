@@ -90,6 +90,9 @@ sudo -E pip  install  pexpect					                               #Library relati
   bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) # Install NodeRed for RPI
   sudo systemctl enable nodered.service                                                                             # Ensures Nodered runs on startup
   npm install node-red-dashboard                                                                                    # Install the dashboard package for nodeRed
+  npm install @node-red-matter/node-red-matter                                                                      # enables the generation of Matter devices within Node-RED
+  npm install @sammachin/node-red-matter-bridge                                                                     # allow users to create a Matter Bridge and wisimulate devices to their Matter controller (eg Apple Home, Google Home, Alexa etc)
+  npm install @sammachin/node-red-matter-controller                                                                 # allow users to control Matter devices from Node RED
   node-red-start # to manuallystarts node red
 
   ## If the install goes wrong below are the commands to uninstall nodeRed
