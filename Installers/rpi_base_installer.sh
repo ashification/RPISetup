@@ -90,7 +90,9 @@ sudo -E pip  install  pexpect					                               #Library relati
   bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) # Install NodeRed for RPI
   sudo systemctl enable nodered.service                                                                             # Ensures Nodered runs on startup
   npm install node-red-dashboard                                                                                    # Install the dashboard package for nodeRed
-  npm install node-red-contrib-tplink-tapo-connect-api                                                              # Install Tapo integration module
+  npm install node-red-contrib-alexa-remote2                                                                        # Follow instructions here -> https://tech.scargill.net/node-red-contrib-alexa-cakebaked/
+  #npm install node-red-contrib-tplink-tapo-connect-api                                                              # Install Tapo integration module - https://flows.nodered.org/node/node-red-contrib-tplink-tapo-connect-api
+  #npm install node-red-contrib-amazon-echo
   #npm install @node-red-matter/node-red-matter                                                                      # enables the generation of Matter devices within Node-RED
   #npm install @sammachin/node-red-matter-bridge                                                                     # allow users to create a Matter Bridge and wisimulate devices to their Matter controller (eg Apple Home, Google Home, Alexa etc)
   #npm install @sammachin/node-red-matter-controller                                                                 # allow users to control Matter devices from Node RED
