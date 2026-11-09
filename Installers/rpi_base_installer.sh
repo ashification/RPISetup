@@ -80,7 +80,7 @@ sudo -E pip  install  pexpect					                               #Library relati
  sudo apt-get install mosquitto-clients
  sudo systemctl enable mosquitto.service
  sudo systemctl status mosquitto.service
- mosquitto -v
+ #mosquitto -v         # Run this command to check MQTT status
  # netstat -a
 
 
