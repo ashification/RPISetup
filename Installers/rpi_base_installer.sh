@@ -80,14 +80,14 @@ sudo -E pip  install  pexpect					                               #Library relati
  sudo apt-get install mosquitto-clients
  sudo systemctl enable mosquitto.service
  sudo systemctl status mosquitto.service
- #mosquitto -v         # Run this command to check MQTT status
+ mosquitto -v         # Run this command to check MQTT version
  # netstat -a
 
 
 ## Installing nodeRed
   ## Source for repo https://nodered.org/docs/getting-started/raspberrypi
 
-  bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) # Install NodeRed for RPI
+  bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/install-update-nodered-deb) # Install NodeRed for RPI
   sudo systemctl enable nodered.service                                                                             # Ensures Nodered runs on startup
   npm install node-red-dashboard                                                                                    # Install the dashboard package for nodeRed
   npm install node-red-contrib-alexa-remote2                                                                        # Follow instructions here -> https://tech.scargill.net/node-red-contrib-alexa-cakebaked/
