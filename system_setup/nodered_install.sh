@@ -1,9 +1,9 @@
 #!/bin/bash
 
  ## Source for repo https://nodered.org/docs/getting-started/raspberrypi
-
-  bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/install-update-nodered-deb) # Install NodeRed for RPI
-  npm install node-red-dashboard                                                                                    # Install the dashboard package for nodeRed
+  sudo apt install -y build-essential git curl
+  bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)  # Install NodeRed for RPI
+  npm install node-red-dashboard                                                                                     # Install the dashboard package for nodeRed
   #npm install node-red-contrib-alexa-remote2                                                                        # Follow instructions here -> https://tech.scargill.net/node-red-contrib-alexa-cakebaked/
   #npm install node-red-contrib-tplink-tapo-connect-api                                                              # Install Tapo integration module - https://flows.nodered.org/node/node-red-contrib-tplink-tapo-connect-api
   #npm install node-red-contrib-amazon-echo
