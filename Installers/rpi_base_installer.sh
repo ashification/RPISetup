@@ -45,6 +45,7 @@ sudo apt-get install  gcc                    # install c/c++ compiler
 sudo apt-get install  wiringpi               # Allows for GPIO control
 sudo apt-get install  i2c-tools              # install i2c tools
 sudo apt-get install openssl                 # Install OpenSSL for iuse with security cert and keys
+sudo apt install npm nodejs                  # Install npm and nodejs (dependancies for node red)
 
 # QR code generator tool and pre-requisite packages
 sudo apt-get install qrencode                
