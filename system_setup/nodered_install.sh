@@ -38,7 +38,7 @@ nodered_service_status=$(sudo systemctl status nodered | grep "Active" | awk '{p
 if [ "$nodered_service_status" = "inactive" ]
 then
 	echo "Node Red not Started."
-	snode-red-start # to manuallystarts node red
+	node-red-start # to manuallystarts node red
 	nodered_service_status=$(sudo systemctl status nodered | grep "Active" | awk '{print $2}')
 
 	if [ "$nodered_service_status" = "inactive" ]
