@@ -90,7 +90,7 @@ sudo -E pip  install  pexpect					                               #Library relati
   bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/install-update-nodered-deb) # Install NodeRed for RPI
   sudo systemctl enable nodered.service                                                                             # Ensures Nodered runs on startup
   npm install node-red-dashboard                                                                                    # Install the dashboard package for nodeRed
-  npm install node-red-contrib-alexa-remote2                                                                        # Follow instructions here -> https://tech.scargill.net/node-red-contrib-alexa-cakebaked/
+  #npm install node-red-contrib-alexa-remote2                                                                        # Follow instructions here -> https://tech.scargill.net/node-red-contrib-alexa-cakebaked/
   #npm install node-red-contrib-tplink-tapo-connect-api                                                              # Install Tapo integration module - https://flows.nodered.org/node/node-red-contrib-tplink-tapo-connect-api
   #npm install node-red-contrib-amazon-echo
   #npm install @node-red-matter/node-red-matter                                                                      # enables the generation of Matter devices within Node-RED
@@ -104,7 +104,7 @@ sudo -E pip  install  pexpect					                               #Library relati
   ## rm -R ~/.node-red
 
 ## Installing Wireguard
- sudo apt-get install wireguard wireguard-tools
+ #sudo apt-get install wireguard wireguard-tools
  # Follow steps here to configure youre server https://docs.pi-hole.net/guides/vpn/wireguard/server/
 
 # Running system Config Scripts to enable features. 
