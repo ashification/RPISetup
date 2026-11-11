@@ -39,35 +39,35 @@ echo "Installing software and updates"
 sudo apt-get -y update
 sudo apt-get -y upgrade
  
-sudo apt-get install  vim                    # install the vim text editor
-sudo apt-get install  git                    # install git repo
-sudo apt-get install  gcc                    # install c/c++ compiler
-sudo apt-get install  wiringpi               # Allows for GPIO control
-sudo apt-get install  i2c-tools              # install i2c tools
-sudo apt-get install openssl                 # Install OpenSSL for iuse with security cert and keys
-sudo apt install npm nodejs                  # Install npm and nodejs (dependancies for node red)
+sudo apt-get install -y vim                    # install the vim text editor
+sudo apt-get install -y git                    # install git repo
+sudo apt-get install -y gcc                    # install c/c++ compiler
+sudo apt-get install -y wiringpi               # Allows for GPIO control
+sudo apt-get install -y i2c-tools              # install i2c tools
+sudo apt-get install -y openssl                 # Install OpenSSL for iuse with security cert and keys
+sudo apt install -y npm nodejs                  # Install npm and nodejs (dependancies for node red)
 
 # QR code generator tool and pre-requisite packages
-sudo apt-get install qrencode                
-sudo apt-get install autoconf
-sudo apt-get install automake
-sudo apt-get install autotools-dev
-sudo apt-get install libtool
-sudo apt-get install pkg-config
-sudo apt-get install libpng-dev
+sudo apt-get install -y qrencode                
+sudo apt-get install -y autoconf
+sudo apt-get install -y automake
+sudo apt-get install -y autotools-dev
+sudo apt-get install -y libtool
+sudo apt-get install -y pkg-config
+sudo apt-get install -y libpng-dev
 
-sudo apt-get install  nmap  # SSH
-sudo apt-get install  xrdp  # Remote PC
-sudo apt-get install  nmcli # Command-line tool for controlling NetworkManager
+sudo apt-get install  -y nmap  # SSH
+sudo apt-get install  -y xrdp  # Remote PC
+sudo apt-get install  -y nmcli # Command-line tool for controlling NetworkManager
 
-sudo apt-get install  python
-sudo apt-get install  mysql-server
-sudo apt-get install  npm i bluetoothctl
-sudo apt-get install  bluez                 #Bluetooth libraries
-sudo apt-get install  bluez-utils           #Bluetooth controls
-sudo apt-get install python-pip
-sudo apt-get install libglib2.0-dev
-sudo pip install bluepy
+sudo apt-get install -y python
+sudo apt-get install -y mysql-server
+sudo apt-get install -y npm i bluetoothctl
+sudo apt-get install -y bluez                 #Bluetooth libraries
+sudo apt-get install -y bluez-utils           #Bluetooth controls
+sudo apt-get install -y python-pip
+sudo apt-get install -y libglib2.0-dev
+sudo pip install -y bluepy
 
 sudo pip     install  pygatt                                     #Bluetooth GATT protocol python Library
 sudo pip     install  "pygatt[GATTTOOL]"		 	                     #Library relative to script being ran
