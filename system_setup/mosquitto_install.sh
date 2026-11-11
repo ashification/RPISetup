@@ -40,3 +40,8 @@ then
 else
 	echo "Mosquitto service already enabled."
 fi
+
+
+# You can test with commands found here: https://diyusthad.com/2025/02/terminal-commands-mosquitto-mqtt-broker.html
+# Publish Test: mosquitto_pub -h localhost -t "test/topic" -m "Hello, MQTT!" 
+# Subscribe Test: mosquitto_sub -h localhost -t "test/topic"
